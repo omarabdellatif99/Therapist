@@ -1,0 +1,63 @@
+/* Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navigate_blck {
+    background-color: #14a6bf;
+    height: 6vh;
+    display: flex; /* Add this to ensure flex behavior */
+    align-items: center; /* Vertically align children */
+    justify-content: start; /* Adjust as needed */
+    background-color: #14a6bf;
+    /* Increase height or make it min-height to accommodate content */
+    min-height: 6vh; /* Changed from height to min-height */
+}
+
+.navigate_blck .navlist {
+    list-style-type: none;
+    margin-left: 50%;   
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%; /* This ensures .navlist matches the height of .navigate_blck */
+}
+
+/* Remove the specific margin for not(:last-child) if you want consistent spacing */
+.navigate_blck .navlist li:not(:last-child) {
+    margin-right: -50vw; /* Previously added space only between items */
+}
+
+/* Updated styling for list items */
+.navigate_blck .navlist li {
+    color: white; /* Default text color */
+    cursor: pointer;
+    padding: 10px; /* Uniform padding for a cleaner look */
+    font-weight: 600;
+    border-radius: 5px; /* Optional: adds rounded corners */
+    transition: background-color 0.2s ease, color 0.2s ease, padding 0.2s ease; /* Smooth transition for background, color, and padding */
+}
+
+/* To ensure the last item doesn't have extra margin */
+.navigate_blck .navlist li:last-child {
+    margin-right: 0;
+}
+
+/* Additional hover effect for better UX */
+.navigate_blck .navlist li:hover {
+    background-color: white; /* Background color changes to white */
+    color: #14a6bf; /* Change text color to blue. You can adjust this color as you like */
+    border-style: none;
+    border-width: 1px 1px 1px; /* Adjust border as needed, or remove if not required */
+    border-radius: 5px;
+    padding: 15px 15px 15px 15px;
+}
+img {
+    width: auto; /* Adjust width to maintain aspect ratio */
+    height: 4vh; /* Adjust based on your design */
+    margin-left: 25px; /* Add some space between image and list */
+    border-radius: 15px;
+}

@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.activity-container:hover .activity-details h2,
+.activity-container:hover .activity-details p {
+    color: white; /* Change text color to white on hover */
+}
+
+.activity-details {
+    width: 100%;
+    padding: 20px;
+}
+
+.activity-details h2 {
+    margin-top: 0;
+    font-size: 20px;
+    font-family: "Krub", sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-style: normal;
+    color: #333; /* Default color */
+}
+
+.activity-details p {
+    margin-bottom: 0;
+    font-family: "Krub", sans-serif;
+    font-weight: 200;
+    margin-top: 5px; /* Adjusted margin */
+    font-style: normal;
+    font-size: 15px;
+    color: #555; /* Default color */
+}
+
+.activity-image {
+    flex: 1;
+    height: 150px; /* Adjusted height */
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.activity-details button {
+    background-color: #14A6BF;
+    color: white;
+    padding: 10px 20px; /* Adjusted padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    width: 200px; /* Adjust button width */
+    font-family: 'Krub', sans-serif; /* Apply Krub font */
+    font-size: 16px; /* Apply font size */
+    margin-top: 10px; /* Adjusted margin */
+}
+
+.activity-details button:hover {
+    background-color: #0e8aa0;
+}
+
+.activity-details ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px; /* Adjusted margin */
+}
+
+.activity-details li {
+    margin-bottom: 10px;
+}
+
+.activity-details li h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.activity-details li p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.scene-buttons .scene-button {
+    background-color: #f2f2f2;
+    margin: 10px 0;
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Krub', sans-serif;
+    font-size: 16px; /* Adjusted font size */
+    color: #333; /* Default color */
+    border: none;
+}
+
+.scene-buttons .scene-button:hover {
+    background-color: #e0e0e0;
+}
+
+.scene-buttons .scene-button.selected {
+    background-color: #14A6BF;
+    color: white;
+}

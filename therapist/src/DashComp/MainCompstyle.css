@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Proceed_stps {
+  background-color: white;
+  border: 10px;
+  padding: 2vh 30vh; /* Adjusted padding */
+  max-height: 80vh;
+  display: block;
+  margin-top: 10vh;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  box-shadow: 5px 0.5px 20px rgb(148, 143, 143);
+  box-sizing: border-box;
+  overflow: auto; /* Added overflow property */
+}
+
+.proceed {
+  list-style-type: none;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; /* Align items to the top */
+  margin-top: 10vh;
+}
+
+.Proceed_stps .proceed li {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  white-space: nowrap;
+  margin-left: -15%;
+}
+
+.Proceed_stps .proceed li:not(:last-child) {
+  margin-right: 12vw; /* Previously added space only between items */
+}
+
+sup {
+  font-size: 30px;
+}
+
+.nxt {
+  color: white;
+  background-color: #14a6bf;
+  border: none;
+  padding: 12px 20px 12px 10px;
+  margin-top: 40%;
+  transform: translateY(-100%);
+  border-radius: 12px;
+  font-size: 18px;
+  width: 25%; /* Full width minus padding */
+  cursor: pointer;
+  margin-left: 95%;
+}
+
+.comps {
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
+  margin-top: 10%;
+  display: block;
+  transform: translateY(10vh);
+}
+
+.Proceed_stps::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.Proceed_stps::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the scrollbar track */
+}
+
+.Proceed_stps::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar thumb */
+  border-radius: 5px; /* Border radius of the scrollbar thumb */
+}
+
+.Proceed_stps::-webkit-scrollbar-thumb:hover {
+  background: #14a6bf; /* Color of the scrollbar thumb on hover */
+}
+
+.patient-list {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  width: 100%; /* Ensure table takes full width */
+  margin-top: 20px; /* Add space above the table */
+  overflow-x: auto; /* Enable horizontal scroll if needed */
+}
+
+.patient-list table {
+  width: 100%; /* Ensure table takes full width of container */
+  border-collapse: collapse; /* Collapse borders between cells */
+}
+
+.patient-list th,
+.patient-list td {
+  padding: 12px 15px; /* Padding inside table cells */
+  text-align: left; /* Align text left within cells */
+  border: 1px solid #ddd; /* Border between cells */
+}
+
+.patient-list th {
+  background-color: #f2f2f2; /* Background color for table header */
+}
+
+.patient-list tbody tr:hover {
+  background-color: #f2f2f2; /* Background color on hover */
+}
+
+.patient-list tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Alternate row background color */
+}
+
+.patient-item p {
+  margin: 5px 0;
+}

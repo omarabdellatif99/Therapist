@@ -1,0 +1,27 @@
+body {
+    background-color: #FAFAFA;
+    height:100%;
+    position: relative;
+}
+
+.Circle {
+    position: absolute;
+    left: 55%; /* Position from the left of the parent */
+    top: 15%; /* Position from the top of the parent */
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    background: linear-gradient(#1D74A7, white);
+}
+
+.Circle2 {
+    position: absolute;
+    left: 75%; /* Position from the left of the parent */
+    top: 65vh; /* Position from the top of the parent */
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    background: linear-gradient(#1D74A7, white);
+}
+
+

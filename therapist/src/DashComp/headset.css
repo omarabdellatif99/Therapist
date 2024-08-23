@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.NetworkScanner {
+    list-style: none;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    background-color: #14A6BF;
+    display: inline-block;
+    border-radius: 15px;
+    padding: 15px 30px;
+    margin: 20px 0;
+    border: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.NetworkScanner:hover {
+    background-color: #0e8aa0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.detected {
+    background-color: #f2f2f2;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Krub', sans-serif;
+    font-size: 25px;
+}
+
+.detected:hover {
+    background-color: #e0e0e0;
+}
+
+.detected span {
+    flex-grow: 1;
+}
+
+.detected.selected {
+    background-color: #14A6BF;
+    color: white;
+}

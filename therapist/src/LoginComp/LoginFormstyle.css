@@ -1,0 +1,139 @@
+
+.loginglass {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px; /* Adjusted width for better visibility */
+    height: 800px; /* Adjust height to fit content */
+    padding: 20px; /* Add some padding around the form */
+    background: linear-gradient( 250deg, rgba(26, 203, 227, 0.2), white);
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
+    backdrop-filter: blur(10px); /* Blur effect for the glass look */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for glass edge */
+    overflow: hidden;
+    min-width: 500px; /* Use min-width instead of width for responsiveness */
+    min-height: 600px;
+    top: 80%; /* Position the top edge of the component in the middle of the page */
+    left: 70%; /* Position the left edge of the component in the middle of the page */
+    transform: translate(-50%, -60%); /* Shift the component back by half its width and height to truly center it */
+}
+.logintitle{
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    margin-right: 14vw; /* Adjust if necessary */
+    margin-bottom: 0rem; /* Adjust this value to manage the space between the title and the paragraph */
+    position: relative;
+}
+
+.glad{
+    color: white;
+    margin-bottom: 40vh;
+    margin-top: 0rem;
+    font-size: smaller;
+}
+
+/* This ensures that .Formular takes advantage of flexbox layout if you decide to make its parent a flex container */
+.Formular {
+    display: grid; /* Use grid instead of flex */
+    grid-template-columns: 1fr; /* Single column layout */
+    justify-items: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    width: 100%; /* Use full width to ensure alignment */
+    gap: 15px; /* Space between grid items, adjust as needed */
+    transform: translateY(-35vh); /* Keep your transformation */
+    margin-bottom: -75vh;
+}
+.rgstrbtn {
+    color: white;
+    background-color: #14A6BF;
+    border: none;
+    width: 30vh; /* Adjusted to auto to fit content */
+    padding: 10px 20px; /* Example padding, adjust as needed */
+    border-radius: 12px;
+    margin-top: 20vh;
+    margin-bottom: 40vh;
+    cursor: pointer;
+    margin-left: 0;
+    display: inline-block; /* Ensures the width is as per the content + padding */
+    text-align: center; /* Ensure text is centered */
+    font-size: 1em;
+}
+
+.lgnbtn{
+    color:white;
+    background-color:#14A6BF;
+    border: none;
+    padding: 12px 200px 12px 190px;
+    margin-top: 20px;
+    border-radius: 12px;
+    font-size: 18px;
+    width: calc(100% - 40px); /* Full width minus padding */
+    cursor: pointer;
+    margin-left: 0;
+}
+#username, #password {
+    border-color: #14A6BF;
+    border-width: 0.5px;
+    border-style: solid;
+    width: 90%;
+    padding: 12px 12px 12px 12px; /* Adjusted padding */
+    border-radius: 10px;
+    margin-right: 0vh;
+    background-color: transparent;
+    text-align: left; /* Align text to the left */
+}
+/* This will work in browsers that support the ::placeholder pseudo-element */
+::placeholder {
+    margin-left: 100px;
+}
+
+/* This will work in browsers that don't support the ::placeholder pseudo-element */
+input::-webkit-input-placeholder {
+    text-align: left;
+}
+input::-moz-placeholder {
+    text-align: left;
+}
+input::-ms-input-placeholder {
+    text-align: left;
+}
+
+#username:focus, #password:focus {
+    outline: none;
+}
+.frgtpass{
+    color: rgb(27, 25, 25);
+    margin-top: -10px;
+    margin-left: 25vh;
+    font-size: 13px;
+    color: rgb(121, 120, 120);
+    cursor: pointer;
+}
+.spacer {
+    height: 60vh; /* Adjust this value to move the Register button down */
+}
+.warningMessage {
+    color: red;
+    font-weight: bold;
+    font-size: 12px;
+  }
+  /* Targeting paragraphs inside the .Validators class */
+  
+  .validationMessage{
+    color:red;
+    margin: 0vh;
+    font-size: 11px;
+    display: block;
+    position: relative;
+  }
+
+  .Validators {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
